@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creativity Quiz - Kpantech</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="logo.png" alt="Kpantech Logo" class="logo">
+  <h1>Creativity Quiz</h1>
+</header>
+
+<div class="login-screen">
+  <h2>Enter Your Details</h2>
+  <input type="text" id="studentName" placeholder="Full Name">
+  <input type="text" id="studentClass" placeholder="Class">
+  <button onclick="startQuiz()">Start Quiz</button>
+</div>
+
+<div class="quiz-screen" style="display:none;">
+  <div id="timer">Time: 00:00</div>
+  <div id="question-container"></div>
+  <button id="nextBtn" onclick="nextQuestion()">Next</button>
+</div>
+
+<div class="result-screen" style="display:none;">
+  <h2>Quiz Completed</h2>
+  <p id="score"></p>
+  <button onclick="downloadScore()">Download Score Sheet</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
